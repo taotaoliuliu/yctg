@@ -1,0 +1,4 @@
+appnewsuri=http://m.zgqxb.com.cn/upload
+
+#从新闻客户端考取图片存放位置
+tohostdir=/home/Unicontribution

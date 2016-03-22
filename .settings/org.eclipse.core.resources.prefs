@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//WebRoot/gridTree=GBK
+encoding//WebRoot/gridTree/GridTree.All.js=GBK
+encoding//WebRoot/include/DateList.js=UTF-8
+encoding//WebRoot/include/IdCard-Validate.js=GBK
+encoding//WebRoot/include/Ymd_Ymd1.jsp=UTF-8
+encoding//WebRoot/jsp=GBK
+encoding//WebRoot/jsp/textAction/main_Contribute2.jsp=UTF-8
+encoding//WebRoot/jsp/textAction/status1.jsp=UTF-8
+encoding//config/uniContribute.properties=GBK
+encoding//src/cn/uni/domain/Status.java=GBK
+encoding//src/cn/uni/servlet/InitializerServlet.java=GBK
+encoding//src/cn/uni/util/FileDeleter.java=GBK
+encoding//src/cn/uni/util/FileToPath.java=UTF-8
+encoding//src/cn/uni/util/ManageText.java=ISO-8859-1
+encoding/<project>=UTF-8
+encoding/WebRoot=UTF-8

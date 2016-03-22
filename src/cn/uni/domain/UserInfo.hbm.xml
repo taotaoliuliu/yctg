@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name="cn.uni.domain.UserInfo" table="userInfo">
+<id name="userID" column="userID" type="integer">
+<generator class="identity"></generator>
+
+</id>
+<property name="name_Login" column="name_Login"></property>
+<property name="name_real" column="name_real"></property>
+<property name="role" column="role"></property>
+<property name="province" column="province"></property>
+<property name="city" column="city"></property>
+<property name="workcompany" column="workcompany"></property>
+<property name="department" column="department"></property>
+<property name="auditingFlag" column="AuditingFlag"></property>
+<property name="postalcode" column="postalcode"></property>
+<property name="idcard" column="IDCard"></property>
+<property name="password" column="password"></property>
+<property name="phone" column="phone"></property>
+<property name="sex" column="sex"></property>
+<property name="QQ" column="QQ"></property>
+<property name="fax" column="fax"></property>
+<property name="MSN" column="MSN"></property>
+<property name="homePhone" column="homePhone"></property>
+<property name="mobilePhone" column="mobilePhone"></property>
+
+<property name="principalship" column="principalship"></property>
+<property name="email" column="email"></property>
+<property name="password2" column="password2"></property>
+<property name="createtime" column="createtime"></property>
+
+<property name="county" column="county"></property>
+<property name="bankcard" column="bankcard"></property>
+<property name="bankaddress" column="bankaddress"></property>
+<property name="banklinkcard" column="banklinkcard"></property>
+
+
+</class>
+
+
+
+
+</hibernate-mapping>

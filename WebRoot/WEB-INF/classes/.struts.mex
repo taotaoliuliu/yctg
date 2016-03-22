@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="lsl" location="939,165" size="420,7665">
+    <action name="userAction_*" location="205,3928" size="150,629">
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="error.jsp" />
+      </result>
+      <result name="index">
+        <resourceEdge source="index" routing="0" target="index.jsp" />
+      </result>
+      <result name="index2">
+        <resourceEdge source="index2" routing="0" target="index2.jsp" />
+      </result>
+      <result name="in">
+        <resourceEdge source="in" routing="0" target="index.jsp" />
+      </result>
+      <result name="home">
+        <resourceEdge source="home" routing="0" target="main_admin.jsp" />
+      </result>
+      <result name="addUI">
+        <resourceEdge source="addUI" routing="0" target="user_create.jsp" />
+      </result>
+      <result name="editUI">
+        <resourceEdge source="editUI" routing="0" target="user_edit.jsp" />
+      </result>
+      <result name="pageEditUI">
+        <resourceEdge source="pageEditUI" routing="0" target="user_edit_person.jsp" />
+      </result>
+      <result name="pageEdit">
+        <resourceEdge source="pageEdit" routing="0" target="user_editOk.jsp" />
+      </result>
+      <result name="pageSearch">
+        <resourceEdge source="pageSearch" routing="0" target="user_search_view.jsp" />
+      </result>
+      <result name="logout">
+        <resourceEdge source="logout" routing="0" target="index.jsp" />
+      </result>
+      <result name="search">
+        <resourceEdge source="search" routing="0" target="user_search.jsp" />
+      </result>
+      <result name="toSearch" />
+      <result name="auditingList">
+        <resourceEdge source="auditingList" routing="0" target="user_AuditingList.jsp" />
+      </result>
+      <result name="editAuditing">
+        <resourceEdge source="editAuditing" routing="0" target="user_editAuditing.jsp" />
+      </result>
+      <result name="lookAuditing">
+        <resourceEdge source="lookAuditing" routing="0" target="user_lookAuditing.jsp" />
+      </result>
+      <result name="lookUser">
+        <resourceEdge source="lookUser" routing="0" target="user_look.jsp" />
+      </result>
+      <result name="editpassword">
+        <resourceEdge source="editpassword" routing="0" target="user_editpassword.jsp" />
+      </result>
+      <result name="tolist" />
+      <result name="toAuditingList" />
+      <result name="changePassword">
+        <resourceEdge source="changePassword" routing="0" target="user_changepasswd.jsp" />
+      </result>
+      <result name="changePasswordRe">
+        <resourceEdge source="changePasswordRe" routing="0" target="success.jsp" />
+      </result>
+      <result name="createPerson">
+        <resourceEdge source="createPerson" routing="0" target="user_create_person_pre.jsp" />
+      </result>
+      <result name="createPersonRe">
+        <resourceEdge source="createPersonRe" routing="0" target="user_create_person.jsp" />
+      </result>
+      <result name="regin">
+        <resourceEdge source="regin" routing="0" target="user_regOk.jsp" />
+      </result>
+      <result name="findPassword">
+        <resourceEdge source="findPassword" routing="0" target="user_findpasswd.jsp" />
+      </result>
+      <result name="findPasswordRe">
+        <resourceEdge source="findPasswordRe" routing="0" target="findpasswd_success.jsp" />
+      </result>
+      <result name="agRegin">
+        <resourceEdge source="agRegin" routing="0" target="user_create_personRe.jsp" />
+      </result>
+      <result name="online">
+        <resourceEdge source="online" routing="0" target="online.jsp" />
+      </result>
+      <result name="invalid.token">
+        <resourceEdge source="invalid.token" routing="0" target="ok.jsp" />
+      </result>
+    </action>
+    <action name="bulletinAction_*" location="205,4870" size="150,146">
+      <result name="home">
+        <resourceEdge source="home" routing="0" target="main_bulletin.jsp" />
+      </result>
+      <result name="addUI">
+        <resourceEdge source="addUI" routing="0" target="bulletin_create.jsp" />
+      </result>
+      <result name="editUI">
+        <resourceEdge source="editUI" routing="0" target="bulletin_edit.jsp" />
+      </result>
+      <result name="show">
+        <resourceEdge source="show" routing="0" target="bulletinShow.jsp" />
+      </result>
+      <result name="showOne">
+        <resourceEdge source="showOne" routing="0" target="bulletin_show.jsp" />
+      </result>
+      <result name="tolist" />
+    </action>
+    <action name="textAction_*" location="65,5503" size="150,419">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="main_stat.jsp" />
+      </result>
+      <result name="manyList">
+        <resourceEdge source="manyList" routing="0" target="main_stat2.jsp" />
+      </result>
+      <result name="manageText">
+        <resourceEdge source="manageText" routing="0" target="main_stat.jsp" />
+      </result>
+      <result name="textContribute">
+        <resourceEdge source="textContribute" routing="0" target="main_Contribute.jsp" />
+      </result>
+      <result name="textContribute2">
+        <resourceEdge source="textContribute2" routing="0" target="main_Contribute2.jsp" />
+      </result>
+      <result name="textContribute3">
+        <resourceEdge source="textContribute3" routing="0" target="main_Contribute3.jsp" />
+      </result>
+      <result name="textShow">
+        <resourceEdge source="textShow" routing="0" target="test.jsp" />
+      </result>
+      <result name="statPerson">
+        <resourceEdge source="statPerson" routing="0" target="stat_person.jsp" />
+      </result>
+      <result name="textStatus">
+        <resourceEdge source="textStatus" routing="0" target="status1.jsp" />
+      </result>
+      <result name="textStatus2">
+        <resourceEdge source="textStatus2" routing="0" target="status2.jsp" />
+      </result>
+      <result name="baobiao">
+        <resourceEdge source="baobiao" routing="0" target="status4.jsp" />
+      </result>
+      <result name="county">
+        <resourceEdge source="county" routing="0" target="status5.jsp" />
+      </result>
+      <result name="textStatusUI">
+        <resourceEdge source="textStatusUI" routing="0" target="status1.jsp" />
+      </result>
+      <result name="textStatusUI2">
+        <resourceEdge source="textStatusUI2" routing="0" target="status2.jsp" />
+      </result>
+      <result name="authorStatus">
+        <resourceEdge source="authorStatus" routing="0" target="status3.jsp" />
+      </result>
+      <result name="authorStatusUI">
+        <resourceEdge source="authorStatusUI" routing="0" target="status3.jsp" />
+      </result>
+      <result name="addUI">
+        <resourceEdge source="addUI" routing="0" target="bulletin_create.jsp" />
+      </result>
+      <result name="editUI">
+        <resourceEdge source="editUI" routing="0" target="bulletin_edit.jsp" />
+      </result>
+      <result name="textSearch">
+        <resourceEdge source="textSearch" routing="0" target="TextSearch.jsp" />
+      </result>
+      <result name="textSearchRe">
+        <resourceEdge source="textSearchRe" routing="0" target="main_stat.jsp" />
+      </result>
+      <result name="toTextSearchRe" />
+      <result name="textAmount">
+        <resourceEdge source="textAmount" routing="0" target="textAmount.jsp" />
+      </result>
+      <result name="textStatSearch">
+        <resourceEdge source="textStatSearch" routing="0" target="TextStatSearch.jsp" />
+      </result>
+      <result name="showText">
+        <resourceEdge source="showText" routing="0" target="textShow.jsp" />
+      </result>
+      <result name="toManageText" />
+    </action>
+    <action name="textAction2_*" location="65,5181" size="150,83">
+      <result name="uploadFilePic">
+        <resourceEdge source="uploadFilePic" routing="0" target="textUpload_Ok.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="error.jsp" />
+      </result>
+      <result name="textContribute">
+        <resourceEdge source="textContribute" routing="0" target="main_Contribute.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="index.jsp" path="jsp/indexAction/index.jsp" location="1408,4350" size="150,55" />
+  <webResource name="index2.jsp" path="jsp/indexAction/index2.jsp" location="1405,4000" size="150,55" />
+  <webResource name="index.jsp" path="jsp/userAction/index.jsp" location="1411,3825" size="150,55" />
+  <webResource name="main_admin.jsp" path="jsp/userAction/main_admin.jsp" location="1396,3650" size="150,55" />
+  <webResource name="user_create.jsp" path="jsp/userAction/user_create.jsp" location="1428,3475" size="150,55" />
+  <webResource name="user_edit.jsp" path="jsp/userAction/user_edit.jsp" location="1399,3300" size="150,55" />
+  <webResource name="user_edit_person.jsp" path="jsp/userAction/user_edit_person.jsp" location="1413,3125" size="150,55" />
+  <webResource name="user_editOk.jsp" path="jsp/userAction/user_editOk.jsp" location="1428,2950" size="150,55" />
+  <webResource name="user_search_view.jsp" path="jsp/userAction/user_search_view.jsp" location="1413,2775" size="150,55" />
+  <webResource name="index.jsp" path="index.jsp" location="1414,2600" size="150,55" />
+  <webResource name="user_search.jsp" path="jsp/userAction/user_search.jsp" location="1428,2425" size="150,55" />
+  <webResource name="user_AuditingList.jsp" path="jsp/userAction/user_AuditingList.jsp" location="1410,2250" size="150,55" />
+  <webResource name="user_editAuditing.jsp" path="jsp/userAction/user_editAuditing.jsp" location="1410,2075" size="150,55" />
+  <webResource name="user_lookAuditing.jsp" path="jsp/userAction/user_lookAuditing.jsp" location="1410,1900" size="150,55" />
+  <webResource name="user_look.jsp" path="jsp/userAction/user_look.jsp" location="1399,1725" size="150,55" />
+  <webResource name="user_editpassword.jsp" path="jsp/userAction/user_editpassword.jsp" location="1410,1550" size="150,55" />
+  <webResource name="user_changepasswd.jsp" path="user_changepasswd.jsp" location="1420,1375" size="150,55" />
+  <webResource name="success.jsp" path="success.jsp" location="1414,1200" size="150,55" />
+  <webResource name="user_create_person_pre.jsp" path="jsp/userAction/user_create_person_pre.jsp" location="1395,1025" size="150,55" />
+  <webResource name="user_create_person.jsp" path="jsp/userAction/user_create_person.jsp" location="1407,850" size="150,55" />
+  <webResource name="user_regOk.jsp" path="jsp/userAction/user_regOk.jsp" location="1396,675" size="150,55" />
+  <webResource name="user_findpasswd.jsp" path="jsp/userAction/user_findpasswd.jsp" location="1416,500" size="150,55" />
+  <webResource name="findpasswd_success.jsp" path="jsp/userAction/findpasswd_success.jsp" location="1407,325" size="150,55" />
+  <webResource name="user_create_personRe.jsp" path="jsp/userAction/user_create_personRe.jsp" location="1401,150" size="150,55" />
+  <webResource name="online.jsp" path="jsp/userAction/online.jsp" location="1128,10" size="150,55" />
+  <webResource name="ok.jsp" path="jsp/userAction/ok.jsp" location="720,4350" size="150,55" />
+  <webResource name="main_bulletin.jsp" path="jsp/bulletinAction/main_bulletin.jsp" location="1410,5050" size="150,55" />
+  <webResource name="bulletin_create.jsp" path="jsp/bulletinAction/bulletin_create.jsp" location="319,5050" size="150,55" />
+  <webResource name="bulletin_edit.jsp" path="jsp/bulletinAction/bulletin_edit.jsp" location="10,4910" size="150,55" />
+  <webResource name="bulletinShow.jsp" path="jsp/bulletinAction/bulletinShow.jsp" location="1413,4875" size="150,55" />
+  <webResource name="bulletin_show.jsp" path="jsp/bulletinAction/bulletin_show.jsp" location="1410,4700" size="150,55" />
+  <webResource name="main_stat.jsp" path="jsp/textAction/main_stat.jsp" location="699,5575" size="150,55" />
+  <webResource name="main_stat2.jsp" path="jsp/textAction/main_stat2.jsp" location="976,7885" size="150,55" />
+  <webResource name="main_Contribute.jsp" path="main_Contribute.jsp" location="1636,5330" size="150,55" />
+  <webResource name="main_Contribute2.jsp" path="jsp/textAction/main_Contribute2.jsp" location="1413,7640" size="150,55" />
+  <webResource name="main_Contribute3.jsp" path="jsp/textAction/main_Contribute3.jsp" location="1413,7465" size="150,55" />
+  <webResource name="test.jsp" path="jsp/textAction/test.jsp" location="1414,7290" size="150,55" />
+  <webResource name="stat_person.jsp" path="jsp/textAction/stat_person.jsp" location="1428,7115" size="150,55" />
+  <webResource name="status1.jsp" path="jsp/textAction/status1.jsp" location="1405,6940" size="150,55" />
+  <webResource name="status2.jsp" path="jsp/textAction/status2.jsp" location="1405,6765" size="150,55" />
+  <webResource name="TextSearch.jsp" path="jsp/textAction/TextSearch.jsp" location="1396,6590" size="150,55" />
+  <webResource name="main_stat.jsp" path="main_stat.jsp" location="1409,6415" size="150,55" />
+  <webResource name="textAmount.jsp" path="jsp/textAction/textAmount.jsp" location="1396,6240" size="150,55" />
+  <webResource name="TextStatSearch.jsp" path="jsp/textAction/TextStatSearch.jsp" location="1419,6065" size="150,55" />
+  <webResource name="textShow.jsp" path="jsp/textAction/textShow.jsp" location="1402,5820" size="150,55" />
+  <webResource name="textUpload_Ok.jsp" path="jsp/textAction/textUpload_Ok.jsp" location="652,5155" size="150,55" />
+  <webResource name="error.jsp" path="jsp/textAction/error.jsp" location="711,5330" size="150,55" />
+  <webResource name="userReport.jsp" path="jsp/textAction/userReport.jsp" location="0,0" size="0,0" />
+  <webResource name="status3.jsp" path="jsp/textAction/status3.jsp" location="0,0" size="0,0" />
+  <webResource name="error.jsp" path="error.jsp" location="0,0" size="0,0" />
+  <webResource name="status4.jsp" path="jsp/textAction/status4.jsp" location="0,0" size="0,0" />
+  <webResource name="status5.jsp" path="jsp/textAction/status5.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

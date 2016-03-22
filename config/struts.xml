@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.ui.theme" value="simple" />
+	 <constant name="struts.multipart.maxSize" value="629145600"/>
+	 
+	 <constant name="struts.custom.i18n.resources" value="cn.uni.action.token"/> 
+
+<package name="lsl" extends="struts-default" namespace="">
+
+
+<interceptors>
+<interceptor name="myIntercepter" class="cn.uni.intercepter.MyIntercepter"></interceptor>
+<interceptor-stack name="myStack">
+<interceptor-ref name="defaultStack"></interceptor-ref>
+<interceptor-ref name="myIntercepter"></interceptor-ref>
+</interceptor-stack>
+</interceptors>
+
+<default-interceptor-ref name="myStack"></default-interceptor-ref>
+
+<global-results>
+<result name="loginUI">index.jsp</result>
+</global-results>
+
+<action name="userAction_*" class="userAction" method="{1}">
+
+
+	<result name="input">error.jsp</result>
+	
+<result name="index">jsp/indexAction/index.jsp</result>
+<result name="toIndex">main.jsp</result>
+<result name="index2">jsp/indexAction/index2.jsp</result>
+<result name="in">jsp/userAction/index.jsp</result>
+<result name="home">jsp/userAction/main_admin.jsp</result>
+<result name="addUI">jsp/userAction/user_create.jsp</result>
+<result name="editUI">jsp/userAction/user_edit.jsp</result>
+<result name="pageEditUI">jsp/userAction/user_edit_person.jsp</result>
+<result name="pageEdit">jsp/userAction/user_editOk.jsp</result>
+<result name="pageSearch">jsp/userAction/user_search_view.jsp</result>
+<result name="logout">index.jsp</result>
+<result name="search">jsp/userAction/user_search.jsp</result>
+<result name="toSearch" type="redirectAction">userAction_search</result>
+<result name="auditingList">jsp/userAction/user_AuditingList.jsp</result>
+<result name="editAuditing">jsp/userAction/user_editAuditing.jsp</result>
+<result name="lookAuditing">jsp/userAction/user_lookAuditing.jsp</result>
+<result name="lookUser">jsp/userAction/user_look.jsp</result>
+<result name="editpassword">jsp/userAction/user_editpassword.jsp</result>
+
+<result name="tolist" type="redirectAction">userAction_home</result>
+<result name="toAuditingList" type="redirectAction">userAction_auditingList</result>
+
+<result name="changePassword">user_changepasswd.jsp</result>
+<result name="changePasswordRe">success.jsp</result>
+
+
+<result name="createPerson">jsp/userAction/user_create_person_pre.jsp</result>
+<result name="createPersonRe">jsp/userAction/user_create_person.jsp</result>
+<result name="regin">jsp/userAction/user_regOk.jsp</result>
+<result name="findPassword">jsp/userAction/user_findpasswd.jsp</result>
+<result name="findPasswordRe">jsp/userAction/findpasswd_success.jsp</result>
+<result name="agRegin">jsp/userAction/user_create_personRe.jsp</result>
+<result name="online">jsp/userAction/online.jsp</result>
+
+
+
+<interceptor-ref name="defaultStack"></interceptor-ref>
+			<interceptor-ref name="token">
+					<param name="includeMethods">regin</param>
+				</interceptor-ref>
+	<result name="invalid.token">jsp/userAction/ok.jsp</result>  
+</action>
+
+<action name="bulletinAction_*" class="bulletinAction" method="{1}">
+
+<result name="home">jsp/bulletinAction/main_bulletin.jsp</result>
+<result name="addUI">jsp/bulletinAction/bulletin_create.jsp</result>
+<result name="editUI">jsp/bulletinAction/bulletin_edit.jsp</result>
+<result name="show">jsp/bulletinAction/bulletinShow.jsp</result>
+<result name="showOne">jsp/bulletinAction/bulletin_show.jsp</result>
+<result name="tolist" type="redirectAction">bulletinAction_home</result>
+
+</action>
+<action name="textAction_*" class="textAction" method="{1}">
+
+<result name="list">jsp/textAction/main_stat.jsp</result>
+<result name="manyList">jsp/textAction/main_stat2.jsp</result>
+<result name="manageText">jsp/textAction/main_stat.jsp</result>
+<result name="textContribute">main_Contribute.jsp</result>
+<result name="textContribute2">jsp/textAction/main_Contribute2.jsp</result>
+<result name="textContribute3">jsp/textAction/main_Contribute3.jsp</result>
+<result name="textShow">jsp/textAction/test.jsp</result>
+<result name="statPerson">jsp/textAction/stat_person.jsp</result>
+<result name="textStatus">jsp/textAction/status1.jsp</result>
+<result name="textStatus2">jsp/textAction/status2.jsp</result>
+
+<result name="baobiao">jsp/textAction/status4.jsp</result>
+<result name="county">jsp/textAction/status5.jsp</result>
+
+
+
+<result name="textStatusUI">jsp/textAction/status1.jsp</result>
+<result name="textStatusUI2">jsp/textAction/status2.jsp</result>
+
+
+<result name="authorStatus">jsp/textAction/status3.jsp</result>
+<result name="authorStatusUI">jsp/textAction/status3.jsp</result>
+<result name="addUI">jsp/bulletinAction/bulletin_create.jsp</result>
+<result name="editUI">jsp/bulletinAction/bulletin_edit.jsp</result>
+<result name="textSearch">jsp/textAction/TextSearch.jsp</result>
+<result name="textSearchRe">main_stat.jsp</result>
+<result name="toTextSearchRe" type="redirectAction">textAction_textSearchRe</result>
+<result name="textAmount">jsp/textAction/textAmount.jsp</result>
+<result name="textStatSearch">jsp/textAction/TextStatSearch.jsp</result>
+<result name="showText">jsp/textAction/textShow.jsp</result> 
+
+
+<result name="toManageText" type="redirectAction">textAction_manageText</result>
+
+
+
+
+
+</action>
+
+<action name="textAction2_*" class="textAction2" method="{1}">
+
+<result name="uploadFilePic" type="redirectAction">textAction_statPerson</result>
+
+<result name="input">jsp/textAction/error.jsp</result>
+<result name="textContribute">main_Contribute.jsp</result>
+<result name="textContribute2">jsp/textAction/main_Contribute2.jsp</result>
+<result name="textContribute3">jsp/textAction/main_Contribute3.jsp</result>
+
+
+
+
+
+<interceptor-ref name="defaultStack">
+			
+				<param name="fileUpload.maximumSize">629145600</param>
+				<param name="fileUpload.allowedExtensions">avi,jpg,png,jpeg,mp3,flv,wma,mp4,3gp</param> 
+				
+</interceptor-ref>
+
+
+
+</action>
+
+</package>
+
+</struts>

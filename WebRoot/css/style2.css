@@ -1,0 +1,56 @@
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	font-size: 14px;
+}
+a:link {
+	color: #000066;
+	text-decoration: none;
+}
+a:hover {
+	color: red;
+	text-decoration: underline;
+}
+a {
+	font-size: 14px;
+}
+a:visited {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+
+.table001 { font-size: 9pt; background-color: #D9E8ED}
+.table002 { font-size: 9pt; background-color: #CCCCCC}
+
+.input0 {border:1 solid black;FONT-SIZE: 12px; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 20px; LINE-HEIGHT: normal; background-color: #ffff}
+.input1 { border:0 solid;FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: 
+normal; HEIGHT: 16px; LINE-HEIGHT: normal ; background-color: #669999} 
+.input2 {BACKGROUND: #000000; border:1px #CC0000 solid; COLOR: #FFFFFF; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 18px; LINE-HEIGHT: normal}
+.Input3 { border:0 solid;FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; height="213" HEIGHT: 16px; LINE-HEIGHT: normal ; background-color: #DAECA7}
+.input4 {border:1 solid black;FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 19px; LINE-HEIGHT: normal; background-color: #D9E8ED; cursor:hand}
+.imgBorder{border-style:solid;border-color:#666666}
+.black14 {
+	FONT-WEIGHT: 800; FONT-SIZE: 14px; COLOR: #000000; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; TEXT-DECORATION: none
+}
+.button {
+	BORDER-RIGHT: #666666 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #ffffff 0px solid; PADDING-LEFT: 3px; BACKGROUND-IMAGE: url(../images/welcome_25.gif); PADDING-BOTTOM: 3px; BORDER-LEFT: #666666 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #999999 0px solid
+}
+.handcursor {
+	CURSOR: hand
+}
+.song12 {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none
+}
+
+A.toplink:link { COLOR: #ffffff; TEXT-DECORATION: none }
+A.toplink:visited { COLOR: #ffffff; TEXT-DECORATION: none }
+A.toplink:hover { COLOR: red; TEXT-DECORATION: none; }
+
+
+.infoHeader { COLOR: #5F72A5;font-family: "����"; font-size: 9pt}
+
+.tableborder1 {width:300;border: 1px; background-color: #6595D6;}
+.tablebody1 {background-color: #FFFFFF;}

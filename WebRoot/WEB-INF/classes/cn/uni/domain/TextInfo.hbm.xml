@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name="cn.uni.domain.TextInfo" table="textInfo">
+<id name="textID" column="textID" type="integer">
+<generator class="identity"></generator>
+
+</id>
+<property name="textTitle" column="textTitle"></property>
+<property name="textContent" column="textContent"></property>
+<property name="author" column="author"></property>
+<property name="sender" column="sender"></property>
+
+<property name="anonyFlag" column="anonyFlag"></property>
+<property name="ContributeDate" column="ContributeDate"></property>
+<property name="rest1" column="rest1"></property>
+<property name="rest2" column="rest2"></property>
+<property name="rest3" column="rest3"></property>
+
+<property name="AuthorIP" column="AuthorIP"></property>
+<property name="IsUsed" column="IsUsed"></property>
+<property name="Cat" column="Cat"></property>
+<property name="status" column="status"></property>
+<property name="AttachInfo" column="AttachInfo"></property>
+<property name="PicInfo" column="PicInfo"></property>
+
+<property name="globalNewsId" column="globalNewsId"></property>
+
+
+
+</class>
+
+
+
+
+</hibernate-mapping>

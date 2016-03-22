@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="uniContribute_qxb"
+  id="myeclipse.1371782293203"
+  context-root="/uniContribute_mysql"
+  j2ee-spec="1.4"
+  archive="uniContribute_qxb.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

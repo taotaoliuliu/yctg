@@ -1,0 +1,82 @@
+﻿<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+
+<div id=PageSelectorBar>
+	<div id=PageSelectorMemo>
+		页次：${currentPage}/${pageCount }页 &nbsp;
+		每页显示：${pageSize }条 &nbsp;
+		总记录数：${recordCount }条
+	</div>
+	<div id=PageSelectorSelectorArea>
+	
+		<a href="javascript:gotoPage(1)" title="首页" style="cursor: hand;">
+			<img src="${pageContext.request.contextPath}/images/firstPage.png"/>
+		</a>
+		
+		<s:iterator begin="beginPageIndex" end="endPageIndex" var="num">
+			<s:if test="#num == currentPage"><!-- 当前页 -->
+				<span class="PageSelectorNum PageSelectorSelected">${num}</span>
+			</s:if>
+			<s:else><!-- 非当前页 -->
+				<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPage(${num});">${num}</span>
+			</s:else>
+		</s:iterator>
+		
+		<a href="javascript:gotoPage(${pageCount})" title="尾页" style="cursor: hand;">
+			<img src="${pageContext.request.contextPath}/images/lastPage.png"/>
+		</a>
+		<!-- 
+		转到：
+		<select id="pn" onchange="gotoPage(this.value)">
+			<s:iterator begin="1" end="%{pageCount}" var="num">
+				<option value="${num}">${num}</option>
+			</s:iterator>
+		</select>
+		
+		<script type="text/javascript">
+			$("#pn").val(${currentPage});
+		</script>
+		-->
+	转到
+    <input type="text" id="pageNum2" name="pageNum2" value="${currentPage }" style="width: 30px;" /> 
+     页 
+     <input type="button" value="GO" onclick="go(${pageCount }, ${currentPage })" />
+		
+		
+	</div>
+</div>
+
+<script type="text/javascript">
+	function gotoPage( pageNum ){
+		 //window.location.href = "topicAction_show.action?id=${topic.id}&pageNum=" + pageNum;
+		
+		$(document.forms[0]).append("<input type='hidden' name='pageNum' value='" + pageNum + "'/>");
+		document.forms[0].pageNum.value = pageNum;
+		document.forms[0].submit(); // 提交表单
+	}
+	
+	function go(totalPageNum, defaultValue) {
+  		// 获得文本框输入的内容
+  		var pageNumObj = document.getElementById("pageNum2");
+  		var pageNum = pageNumObj.value;
+  		if(pageNum==null || pageNum=="") {
+  			alert("页数不能为空");
+  			pageNumObj.value = defaultValue;
+  			return;
+  		}
+  		var num = parseInt(pageNum);	// NaN  not a number
+  		if(isNaN(num)) {
+  			alert("请输入一个数字");
+  			pageNumObj.value = defaultValue;
+  			return ;
+  		}
+  		if(num<1 || num>totalPageNum) {
+  			alert("对不起！没有这一页");
+  			pageNumObj.value = defaultValue;
+  			return;
+  		}
+  	$(document.forms[0]).append("<input type='hidden' name='pageNum' value='" + pageNum + "'/>");
+  		
+  		document.forms[0].submit();
+	}
+</script>

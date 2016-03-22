@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name="cn.uni.domain.BulletinInfo" table="bulletinInfo">
+<id name="bulletinID" column="bulletinID" type="integer">
+<generator class="identity"></generator>
+
+</id>
+<property name="bulletinTitel" column="bulletinTitel"></property>
+<property name="bulletinContent" column="bulletinContent"></property>
+<property name="CreatTime" column="CreatTime"></property>
+<property name="ifPut" column="ifPut"></property>
+
+</class>
+
+
+
+
+</hibernate-mapping>
